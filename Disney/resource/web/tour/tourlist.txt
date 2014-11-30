@@ -1,0 +1,40 @@
+{
+    "info": [
+        {
+            "imageUrl": "guide_hnpgc.jpg",
+            "title": "海宁中国皮革城",
+            "desc": "中国最大的皮草外套、箱包、皮草集中市场，皮草风尚看海宁~",
+            "detailUrl": "hnpgc_info.txt"
+        },
+        {
+            "imageUrl": "guide_lxgl.jpg",
+            "title": "鲁迅故里",
+            "desc": "三味书屋、百草园，跟着书本游绍兴，去鲁迅故里~",
+            "detailUrl": "lxgl_info.txt"
+        },
+        {
+            "imageUrl": "guide_xh.jpg",
+            "title": "西湖",
+            "desc": "西湖美景三月天，杨柳依依适合情侣旅游的地方！",
+            "detailUrl": "xh_info.txt"
+        },
+        {
+            "imageUrl": "guide_xt.jpg",
+            "title": "西塘",
+            "desc": "中国首批历史文化名镇，国家AAAA级景区！",
+            "detailUrl": "xt_info.txt"
+        },
+        {
+            "imageUrl": "guide_xxsd.jpg",
+            "title": "西溪湿地",
+            "desc": "国内第一个也是唯一的集城市湿地、农耕湿地、文化湿地于一体的国家湿地公园。",
+            "detailUrl": "xxsd_info.txt"
+        },
+        {
+            "imageUrl": "guide_yg.jpg",
+            "title": "盐官",
+            "desc": "乾隆的亲身父亲陈阁老你知道么？那还不快来盐官~",
+            "detailUrl": "yg_info.txt"
+        }
+    ]
+}

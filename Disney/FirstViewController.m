@@ -15,11 +15,12 @@
 #import "dataStruct.h"
 #import "YouMiWall.h"
 #import "MyAdmobView.h"
+#import "BaiduMobAdView.h"
 
 #define BIG_IMAGE_TAG  1001
 
 
-@interface FirstViewController ()<EGORefreshTableHeaderDelegate>
+@interface FirstViewController ()<EGORefreshTableHeaderDelegate,BaiduMobAdViewDelegate>
 {
     UIImageView * _bigImgView;
     IntroInfo * _intro;
@@ -94,23 +95,6 @@
     
     NSTimeInterval farSec = [farDate timeIntervalSince1970];
     NSTimeInterval nowSec = [now timeIntervalSince1970];
-    
-    
-    if( nowSec - farSec >= 0 )
-    {
-        if((int)nowSec % 2 == 0 )
-        {
-            [YouMiWall showOffers:NO didShowBlock:^{
-                NSLog(@"有米积分墙已显示");
-            } didDismissBlock:^{
-                NSLog(@"有米积分墙已退出");
-            }];
-        }
-        else
-        {
-            [[MyAdmobView alloc]initWithViewController:self];
-        }
-    }
 }
 
 
@@ -177,16 +161,26 @@
 
 -(void)laytouADVView:(CGRect)rect
 {
-     GADBannerView *_bannerView;
-     _bannerView = [[[GADBannerView alloc]initWithFrame:rect]autorelease];//设置位置
+    BaiduMobAdView * _baiduView = [[BaiduMobAdView alloc]init];
+    _baiduView.AdType = BaiduMobAdViewTypeBanner;
+    _baiduView.frame = CGRectMake(0, rect.origin.y+5, kBaiduAdViewBanner320x48.width, kBaiduAdViewBanner320x48.height);
     
-    _bannerView.adUnitID = ADMOB_ID;//调用你的id
-    
-    _bannerView.rootViewController = self;
-    
-    [_scrView addSubview:_bannerView];//添加bannerview到你的试图
-    
-    [_bannerView loadRequest:[GADRequest request]];
+    _baiduView.delegate = self;
+    [self.view addSubview:_baiduView];
+    [_baiduView start];
+}
+
+- (NSString *)publisherId
+{
+    return @"bf498248";
+}
+
+/**
+ *  应用在union.baidu.com上的APPID
+ */
+- (NSString*) appSpec
+{
+    return @"bf498248";
 }
 
 
@@ -211,11 +205,11 @@
     //广告
     
     yBegin += 5;
-    rect = CGRectMake(5, yBegin, 310, 100);
+    rect = CGRectMake(5, yBegin, 310, 50);
     [self laytouADVView:rect];
     
     //
-    yBegin += 100+5;
+    yBegin += 50+5;
     
     rect = CGRectMake(10, yBegin , 300, 2);
     [self layoutSepImgView:_scrView wihtRect:rect];

@@ -12,9 +12,7 @@
 #import "JSONKit.h"
 #import "dataStruct.h"
 #import "MyWebViewController.h"
-#import "YouMiWall.h"
 #import "AppDelegate.h"
-//#import "youmiconfuse.h"
 
 #define ADV_LIST_URL @"http://www.999dh.net/disney/about/advlist.txt";
 
@@ -71,40 +69,6 @@
     }
     
     [self downLoadInfoFile];
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-    [self showYOUMIAdv];
-}
-
-
--(void)showYOUMIAdv
-{
-    NSDateComponents * data = [[NSDateComponents alloc]init];
-    NSCalendar * cal = [NSCalendar currentCalendar];
-    
-    [data setCalendar:cal];
-    [data setYear:SHOW_ADV_YEAR];
-    [data setMonth:SHOW_ADV_MONTH];
-    [data setDay:SHOW_ADV_DAY];
-    
-    NSDate * farDate = [cal dateFromComponents:data];
-    
-    NSDate *now = [NSDate date];
-    
-    NSTimeInterval farSec = [farDate timeIntervalSince1970];
-    NSTimeInterval nowSec = [now timeIntervalSince1970];
-    
-    
-    if( nowSec - farSec >= 0 )
-    {
-        [YouMiWall showOffers:NO didShowBlock:^{
-            NSLog(@"有米推荐墙已显示");
-        } didDismissBlock:^{
-            NSLog(@"有米推荐墙已退出");
-        }];
-    }
 }
 
 

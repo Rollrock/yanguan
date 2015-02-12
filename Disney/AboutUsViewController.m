@@ -8,7 +8,6 @@
 
 #import "AboutUsViewController.h"
 #import "GADBannerView.h"
-#import "YouMiWall.h"
 #import "dataStruct.h"
 
 @interface AboutUsViewController ()

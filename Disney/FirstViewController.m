@@ -13,7 +13,6 @@
 #import "SDWebImageManager.h"
 #import "GADBannerView.h"
 #import "dataStruct.h"
-#import "YouMiWall.h"
 #import "MyAdmobView.h"
 #import "BaiduMobAdView.h"
 
@@ -76,27 +75,7 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self showYOUMIAdv];
 }
-
--(void)showYOUMIAdv
-{
-    NSDateComponents * data = [[NSDateComponents alloc]init];
-    NSCalendar * cal = [NSCalendar currentCalendar];
-    
-    [data setCalendar:cal];
-    [data setYear:SHOW_ADV_YEAR];
-    [data setMonth:SHOW_ADV_MONTH];
-    [data setDay:SHOW_ADV_DAY];
-    
-    NSDate * farDate = [cal dateFromComponents:data];
-
-    NSDate *now = [NSDate date];
-    
-    NSTimeInterval farSec = [farDate timeIntervalSince1970];
-    NSTimeInterval nowSec = [now timeIntervalSince1970];
-}
-
 
 
 -(void)showBigImg:(BOOL)bShow withUrlStr:(NSString*)strUrl

@@ -93,12 +93,9 @@
 		48242EF11A16471D00F269C7 /* yg_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48242ECC1A16471D00F269C7 /* yg_4.jpg */; };
 		48242EF21A16471D00F269C7 /* yg_info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48242ECD1A16471D00F269C7 /* yg_info.txt */; };
 		48242EF41A18D65800F269C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48242EF31A18D65800F269C7 /* Images.xcassets */; };
+		482CADF11A8BA4CD005608C2 /* libBaiduMobAdSdk64bit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 482CADF01A8BA4CD005608C2 /* libBaiduMobAdSdk64bit.a */; };
 		483295E61997A75300032921 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483295E51997A75300032921 /* StoreKit.framework */; };
-		48329604199A462500032921 /* libYouMi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48329602199A462500032921 /* libYouMi.a */; };
-		48329605199A467800032921 /* libOpenIDFA.a in Sources */ = {isa = PBXBuildFile; fileRef = 48329601199A462500032921 /* libOpenIDFA.a */; };
-		48329606199A467800032921 /* libYouMi.a in Sources */ = {isa = PBXBuildFile; fileRef = 48329602199A462500032921 /* libYouMi.a */; };
 		4836FEA11A6D346D0031F4BA /* baidumobadsdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4836FE6F1A6D346D0031F4BA /* baidumobadsdk.bundle */; };
-		4836FEA21A6D346D0031F4BA /* libBaiduMobAdSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4836FE731A6D346D0031F4BA /* libBaiduMobAdSdk.a */; };
 		4836FEA41A6D346E0031F4BA /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = 4836FE761A6D346D0031F4BA /* mongoose.c */; };
 		4836FEA51A6D346E0031F4BA /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 4836FE7A1A6D346D0031F4BA /* OpenUDID.m */; };
 		4836FEA61A6D346E0031F4BA /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4836FE7D1A6D346D0031F4BA /* CDataScanner.m */; };
@@ -342,20 +339,8 @@
 		48242ECC1A16471D00F269C7 /* yg_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yg_4.jpg; sourceTree = "<group>"; };
 		48242ECD1A16471D00F269C7 /* yg_info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yg_info.txt; sourceTree = "<group>"; };
 		48242EF31A18D65800F269C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		482B8B6F19D38E8700FDC224 /* youmiconfuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = youmiconfuse.h; sourceTree = "<group>"; };
+		482CADF01A8BA4CD005608C2 /* libBaiduMobAdSdk64bit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobAdSdk64bit.a; sourceTree = "<group>"; };
 		483295E51997A75300032921 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		483295F7199A462500032921 /* YouMiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMiConfig.h; sourceTree = "<group>"; };
-		483295F8199A462500032921 /* youmiconfuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = youmiconfuse.h; sourceTree = "<group>"; };
-		483295F9199A462500032921 /* YouMiDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMiDelegateProtocol.h; sourceTree = "<group>"; };
-		483295FA199A462500032921 /* YouMiPointsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMiPointsManager.h; sourceTree = "<group>"; };
-		483295FB199A462500032921 /* YouMiSpots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMiSpots.h; sourceTree = "<group>"; };
-		483295FC199A462500032921 /* YouMiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMiView.h; sourceTree = "<group>"; };
-		483295FD199A462500032921 /* YouMiWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMiWall.h; sourceTree = "<group>"; };
-		483295FE199A462500032921 /* YouMiWallAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMiWallAppModel.h; sourceTree = "<group>"; };
-		483295FF199A462500032921 /* YouMiWallSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMiWallSpot.h; sourceTree = "<group>"; };
-		48329600199A462500032921 /* YouMiWallSpotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMiWallSpotView.h; sourceTree = "<group>"; };
-		48329601199A462500032921 /* libOpenIDFA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOpenIDFA.a; sourceTree = "<group>"; };
-		48329602199A462500032921 /* libYouMi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYouMi.a; sourceTree = "<group>"; };
 		4836FE6B1A6D346D0031F4BA /* BaiduMobAdCommonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdCommonConfig.h; sourceTree = "<group>"; };
 		4836FE6C1A6D346D0031F4BA /* BaiduMobAdDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdDelegateProtocol.h; sourceTree = "<group>"; };
 		4836FE6D1A6D346D0031F4BA /* BaiduMobAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdInterstitial.h; sourceTree = "<group>"; };
@@ -364,7 +349,6 @@
 		4836FE701A6D346D0031F4BA /* BaiduMobAdSplash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdSplash.h; sourceTree = "<group>"; };
 		4836FE711A6D346D0031F4BA /* BaiduMobAdSplashDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdSplashDelegate.h; sourceTree = "<group>"; };
 		4836FE721A6D346D0031F4BA /* BaiduMobAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdView.h; sourceTree = "<group>"; };
-		4836FE731A6D346D0031F4BA /* libBaiduMobAdSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobAdSdk.a; sourceTree = "<group>"; };
 		4836FE761A6D346D0031F4BA /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
 		4836FE771A6D346D0031F4BA /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
 		4836FE791A6D346D0031F4BA /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
@@ -583,6 +567,7 @@
 				4836FEB81A6D35700031F4BA /* MediaPlayer.framework in Frameworks */,
 				48E67207183A3AB90061B2C0 /* MessageUI.framework in Frameworks */,
 				48FA3AB31991159E005BF281 /* AVFoundation.framework in Frameworks */,
+				482CADF11A8BA4CD005608C2 /* libBaiduMobAdSdk64bit.a in Frameworks */,
 				48E671FF183A3A860061B2C0 /* AudioToolbox.framework in Frameworks */,
 				4836FEB61A6D35550031F4BA /* CoreMotion.framework in Frameworks */,
 				48FA3AA2199105BE005BF281 /* libz.dylib in Frameworks */,
@@ -592,12 +577,10 @@
 				48D1D97C18A7B3F800719AE3 /* AdSupport.framework in Frameworks */,
 				4878DB80197FF669000C8868 /* Security.framework in Frameworks */,
 				485FD4AE19E2C4E8002E3C94 /* EventKit.framework in Frameworks */,
-				4836FEA21A6D346D0031F4BA /* libBaiduMobAdSdk.a in Frameworks */,
 				485FD4AF19E2C4E8002E3C94 /* EventKitUI.framework in Frameworks */,
 				4878DB84197FF68A000C8868 /* libsqlite3.dylib in Frameworks */,
 				4878DB82197FF678000C8868 /* CFNetwork.framework in Frameworks */,
 				481096FA19C5C73E002F2659 /* libGoogleAdMobAds.a in Frameworks */,
-				48329604199A462500032921 /* libYouMi.a in Frameworks */,
 				489E344F19E6CD3300A296AC /* libWeChatSDK.a in Frameworks */,
 				485B2ED9181D54CA00F70FD7 /* MapKit.framework in Frameworks */,
 			);
@@ -923,45 +906,10 @@
 			path = yg;
 			sourceTree = "<group>";
 		};
-		483295F4199A462500032921 /* youmi */ = {
-			isa = PBXGroup;
-			children = (
-				482B8B6F19D38E8700FDC224 /* youmiconfuse.h */,
-				483295F5199A462500032921 /* lib */,
-			);
-			path = youmi;
-			sourceTree = "<group>";
-		};
-		483295F5199A462500032921 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				483295F6199A462500032921 /* include */,
-				48329601199A462500032921 /* libOpenIDFA.a */,
-				48329602199A462500032921 /* libYouMi.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		483295F6199A462500032921 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				483295F7199A462500032921 /* YouMiConfig.h */,
-				483295F8199A462500032921 /* youmiconfuse.h */,
-				483295F9199A462500032921 /* YouMiDelegateProtocol.h */,
-				483295FA199A462500032921 /* YouMiPointsManager.h */,
-				483295FB199A462500032921 /* YouMiSpots.h */,
-				483295FC199A462500032921 /* YouMiView.h */,
-				483295FD199A462500032921 /* YouMiWall.h */,
-				483295FE199A462500032921 /* YouMiWallAppModel.h */,
-				483295FF199A462500032921 /* YouMiWallSpot.h */,
-				48329600199A462500032921 /* YouMiWallSpotView.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
 		4836FE6A1A6D346D0031F4BA /* BaiduAdv */ = {
 			isa = PBXGroup;
 			children = (
+				482CADF01A8BA4CD005608C2 /* libBaiduMobAdSdk64bit.a */,
 				4836FE6B1A6D346D0031F4BA /* BaiduMobAdCommonConfig.h */,
 				4836FE6C1A6D346D0031F4BA /* BaiduMobAdDelegateProtocol.h */,
 				4836FE6D1A6D346D0031F4BA /* BaiduMobAdInterstitial.h */,
@@ -970,7 +918,6 @@
 				4836FE701A6D346D0031F4BA /* BaiduMobAdSplash.h */,
 				4836FE711A6D346D0031F4BA /* BaiduMobAdSplashDelegate.h */,
 				4836FE721A6D346D0031F4BA /* BaiduMobAdView.h */,
-				4836FE731A6D346D0031F4BA /* libBaiduMobAdSdk.a */,
 				4836FE751A6D346D0031F4BA /* Mongoose */,
 				4836FE781A6D346D0031F4BA /* OpenUDID */,
 				4836FE7B1A6D346D0031F4BA /* TouchJSON */,
@@ -1134,7 +1081,6 @@
 				4836FE6A1A6D346D0031F4BA /* BaiduAdv */,
 				489E344B19E6CD3300A296AC /* WeChatSDK */,
 				481096EC19C5C73E002F2659 /* admob */,
-				483295F4199A462500032921 /* youmi */,
 				48CB858F1834E3F60027B9F0 /* SBJson */,
 				48CB85871834E3EC0027B9F0 /* dianpingapi */,
 				48C63A881821374800538FD5 /* EGO */,
@@ -1568,8 +1514,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4836FEAC1A6D346E0031F4BA /* NSDictionary_JSONExtensions.m in Sources */,
-				48329605199A467800032921 /* libOpenIDFA.a in Sources */,
-				48329606199A467800032921 /* libYouMi.a in Sources */,
 				480D9129181563FF005E30C6 /* main.m in Sources */,
 				4836FEAA1A6D346E0031F4BA /* CJSONSerializedData.m in Sources */,
 				480D912D181563FF005E30C6 /* AppDelegate.m in Sources */,
@@ -1675,7 +1619,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -1701,7 +1645,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
@@ -1732,7 +1676,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1763,7 +1707,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
